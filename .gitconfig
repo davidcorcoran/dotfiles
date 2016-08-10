@@ -1,0 +1,38 @@
+[alias]
+  a = add
+  br = branch
+  cb = checkout -b
+  ci = commit
+  cim = commit -m
+  cl = clone
+  co = checkout
+  cp = cherry-pick
+  df = diff
+  dh = diff HEAD
+  ol = log --oneline
+  lg = log -p
+  rb = rebase
+  sl = stash list
+  sp = stash pop
+  ss = stash save
+  st = status
+
+  brname = !git branch | grep "^*" | awk '{ print $2 }'
+
+  who = shortlog -sne
+  graph = log --graph --abbrev-commit --decorate --date=relative --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all
+
+[color]
+  ui = true
+
+[core]
+  autocrlf = false
+  safecrlf = false
+  ignorecase = false
+
+[branch]
+  autosetuprebase = always
+
+[push]
+  default = simple
+
