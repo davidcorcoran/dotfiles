@@ -6,7 +6,7 @@
   cim = commit -m
   cl = clone
   co = checkout
-  cp = cherry-pick
+  chp = cherry-pick
   df = diff
   dh = diff HEAD
   ol = log --oneline
