@@ -67,7 +67,7 @@ _isroot=false
   export JDK_HOME=/home/dave/jdks/jdk8/
   export JAVA_HOME=$JDK_HOME
 
-  export PATH=/usr/local/bin:$PATH:$HOME/bin:$JAVA_HOME/bin
+  export PATH=$HOME/bin:$JAVA_HOME/bin:/usr/local/bin:$PATH
   if [[ -d "$HOME/bin" ]] ; then
       PATH="$HOME/bin:$PATH"
   fi
